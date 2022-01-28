@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
-from black import List
-
 """
+Description:
+
 Given an integer array nums, move all 0's to the end of it while maintaining the
 relative order of the non-zero elements.
 
@@ -21,9 +20,17 @@ Example 2:
 Input: nums = [0]
 Output: [0]
 """
+from black import List
 
 
 class Solution:
+    """
+    Solution implementation for the Move Zeroes problem on leetcode.com
+    """
+
+    def __init__(self):
+        self.name = "Solution"
+
     def move_zeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
