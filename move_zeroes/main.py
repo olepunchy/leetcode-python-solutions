@@ -28,9 +28,6 @@ class Solution:
     Solution implementation for the Move Zeroes problem on leetcode.com
     """
 
-    def __init__(self):
-        self.name = "Solution"
-
     def move_zeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
