@@ -22,8 +22,13 @@ Output: 4
 """
 
 
-class Solution(object):
-    def searchInsert(self, nums, target) -> int:
+# class Solution(object):
+class Solution:
+    """
+    Class implementation for leetcode problem
+    """
+
+    def search_insert(self, nums, target) -> int:
 
         left = 0
         right = len(nums) - 1
@@ -47,14 +52,14 @@ class Solution(object):
 if __name__ == "__main__":
 
     target = 5
-    nums = [1, 2, 3, 4, 5]
+    numbers = [1, 2, 3, 4, 5]
     solution = Solution()
 
-    result = solution.searchInsert(nums, target)
+    result = solution.search_insert(numbers, target)
     print(result)
 
     target_two = 7
-    nums_two = [1, 2, 3, 4, 5, 6]
+    numbers_two = [1, 2, 3, 4, 5, 6]
 
-    result_two = solution.searchInsert(nums_two, target_two)
+    result_two = solution.search_insert(numbers_two, target_two)
     print(result_two)
