@@ -38,18 +38,26 @@ class Solution:
     ) -> Optional[ListNode]:
 
         size = 1
+        # Tracking variables that start at the head node
         current = previous = head
 
+        # While current has a next pointer
         while current.next:
+            # Increase size by 1
             size += 1
+            # Step current forward by one node
             current = current.next
 
+            # If the size is greater than n + 1
             if size > n + 1:
+                # Step previous forward to the next node
                 previous = previous.next
 
+        # If size is the same as n
         if size == n:
             return head.next
 
         else:
+            # Point previous two nodes forward
             previous.next = previous.next.next
             return head
